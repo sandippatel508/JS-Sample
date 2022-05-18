@@ -1,0 +1,48 @@
+/*let city = 'Mumbai';
+const length1 = 2000;
+if (length1 === 1000){
+    city='Pune'; 
+}
+else {
+    city = `Chennai`
+}
+showMessage(city);
+*/
+/*function helloWorld(mult){
+let res = mult*5;
+return res;
+}
+let res2= helloWorld(20);
+showMessage(res2);
+*/
+
+
+let person = {
+    name: 'Sandip',
+    age: 28,
+    partTime: false,
+    showAllInfo: function(realAge){
+        let name1= this.name + " " + realAge;
+        return name1;
+    },
+    showAllInfo2: function(realAge2){
+            realAge2.age++;
+            return realAge2;
+    }
+}
+//passing a value
+showMessage(person.showAllInfo(34));
+//passing a object
+showMessage(person.name+ " is "+ person.showAllInfo2(person.age));
+
+let values = ['a', 'b', 'c','d'];
+values[0] = 'aaa';
+const name1 = values.push('hello');
+//pop, shift, unshift
+console.log(values);
+let values2 = values.slice(1,3);//store items in new array from parent array by deleting few values
+console.log(values2);
+let values4 = ['aa', 'bb', 'cc','dd'];
+values4.splice(0,2);//delete items from original array,acts more like for loop
+console.log(values4);
+//indexOf(), filter(), find(),forEach()
