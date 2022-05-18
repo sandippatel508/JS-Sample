@@ -1,0 +1,9 @@
+function showMessage(message){
+    document.getElementById('message').textContent=message;
+}
+
+//buttons-dom programming
+const button = document.getElementById('see-review');
+button.addEventListener('click', function(){
+    console.log('click');
+});
